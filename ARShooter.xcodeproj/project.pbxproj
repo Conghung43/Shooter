@@ -13,6 +13,12 @@
 		0B4833B51F5B89F20087AD00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4833B41F5B89F20087AD00 /* Assets.xcassets */; };
 		0B4833B81F5B89F20087AD00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4833B61F5B89F20087AD00 /* LaunchScreen.storyboard */; };
 		0B4833C11F5B8AFF0087AD00 /* Media.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4833C01F5B8AFF0087AD00 /* Media.scnassets */; };
+		2A92631F207DF32D008E6CE6 /* Plane_Ef-Gionex_--8128_hifi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A92631E207DF32D008E6CE6 /* Plane_Ef-Gionex_--8128_hifi.mp3 */; };
+		2A926326207DF34B008E6CE6 /* Biplane-LadyIT-2272_hifi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A926322207DF34A008E6CE6 /* Biplane-LadyIT-2272_hifi.mp3 */; };
+		2A926327207DF34B008E6CE6 /* Nuklear_-Staberxp-8147_hifi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A926323207DF34B008E6CE6 /* Nuklear_-Staberxp-8147_hifi.mp3 */; };
+		2A98D436207E4CB600811911 /* Uzi-Drug_Dea-8374_hifi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A98D435207E4CB600811911 /* Uzi-Drug_Dea-8374_hifi.mp3 */; };
+		2A98D438207E51E400811911 /* 376060__morganpurkis__mouth-gun.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A98D437207E51E400811911 /* 376060__morganpurkis__mouth-gun.wav */; };
+		5E12EBC5580C827D0238FC2B /* Pods_ARShooter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA0E94E5C07076382C6778A /* Pods_ARShooter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,14 @@
 		0B4833B71F5B89F20087AD00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B4833B91F5B89F20087AD00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B4833C01F5B8AFF0087AD00 /* Media.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Media.scnassets; sourceTree = "<group>"; };
+		2A92631E207DF32D008E6CE6 /* Plane_Ef-Gionex_--8128_hifi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Plane_Ef-Gionex_--8128_hifi.mp3"; sourceTree = "<group>"; };
+		2A926322207DF34A008E6CE6 /* Biplane-LadyIT-2272_hifi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Biplane-LadyIT-2272_hifi.mp3"; sourceTree = "<group>"; };
+		2A926323207DF34B008E6CE6 /* Nuklear_-Staberxp-8147_hifi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Nuklear_-Staberxp-8147_hifi.mp3"; sourceTree = "<group>"; };
+		2A98D435207E4CB600811911 /* Uzi-Drug_Dea-8374_hifi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Uzi-Drug_Dea-8374_hifi.mp3"; sourceTree = "<group>"; };
+		2A98D437207E51E400811911 /* 376060__morganpurkis__mouth-gun.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "376060__morganpurkis__mouth-gun.wav"; sourceTree = "<group>"; };
+		6DA0E94E5C07076382C6778A /* Pods_ARShooter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARShooter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		931CB5572E95DF198CFBA05A /* Pods-ARShooter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARShooter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARShooter/Pods-ARShooter.debug.xcconfig"; sourceTree = "<group>"; };
+		F76994ECA11F6020D7671EDA /* Pods-ARShooter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARShooter.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARShooter/Pods-ARShooter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E12EBC5580C827D0238FC2B /* Pods_ARShooter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				0B4833AC1F5B89F20087AD00 /* ARShooter */,
 				0B4833AB1F5B89F20087AD00 /* Products */,
+				F1058229E32C4EC59DAF782F /* Pods */,
+				0F6FAFEEEF282F348F26493A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +73,11 @@
 		0B4833AC1F5B89F20087AD00 /* ARShooter */ = {
 			isa = PBXGroup;
 			children = (
+				2A98D437207E51E400811911 /* 376060__morganpurkis__mouth-gun.wav */,
+				2A98D435207E4CB600811911 /* Uzi-Drug_Dea-8374_hifi.mp3 */,
+				2A926322207DF34A008E6CE6 /* Biplane-LadyIT-2272_hifi.mp3 */,
+				2A926323207DF34B008E6CE6 /* Nuklear_-Staberxp-8147_hifi.mp3 */,
+				2A92631E207DF32D008E6CE6 /* Plane_Ef-Gionex_--8128_hifi.mp3 */,
 				0B4833AD1F5B89F20087AD00 /* AppDelegate.swift */,
 				0B4833AF1F5B89F20087AD00 /* ViewController.swift */,
 				0B4833B11F5B89F20087AD00 /* Main.storyboard */,
@@ -67,6 +89,23 @@
 			path = ARShooter;
 			sourceTree = "<group>";
 		};
+		0F6FAFEEEF282F348F26493A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DA0E94E5C07076382C6778A /* Pods_ARShooter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1058229E32C4EC59DAF782F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				931CB5572E95DF198CFBA05A /* Pods-ARShooter.debug.xcconfig */,
+				F76994ECA11F6020D7671EDA /* Pods-ARShooter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B4833BC1F5B89F20087AD00 /* Build configuration list for PBXNativeTarget "ARShooter" */;
 			buildPhases = (
+				CFF2D380ADE43D0BA5464070 /* [CP] Check Pods Manifest.lock */,
 				0B4833A61F5B89F20087AD00 /* Sources */,
 				0B4833A71F5B89F20087AD00 /* Frameworks */,
 				0B4833A81F5B89F20087AD00 /* Resources */,
+				B823758CC28FCC3772AE02C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,14 +167,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A98D438207E51E400811911 /* 376060__morganpurkis__mouth-gun.wav in Resources */,
+				2A926327207DF34B008E6CE6 /* Nuklear_-Staberxp-8147_hifi.mp3 in Resources */,
+				2A926326207DF34B008E6CE6 /* Biplane-LadyIT-2272_hifi.mp3 in Resources */,
+				2A98D436207E4CB600811911 /* Uzi-Drug_Dea-8374_hifi.mp3 in Resources */,
 				0B4833B81F5B89F20087AD00 /* LaunchScreen.storyboard in Resources */,
 				0B4833B51F5B89F20087AD00 /* Assets.xcassets in Resources */,
+				2A92631F207DF32D008E6CE6 /* Plane_Ef-Gionex_--8128_hifi.mp3 in Resources */,
 				0B4833C11F5B8AFF0087AD00 /* Media.scnassets in Resources */,
 				0B4833B31F5B89F20087AD00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B823758CC28FCC3772AE02C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ARShooter/Pods-ARShooter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Each/Each.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Each.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARShooter/Pods-ARShooter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFF2D380ADE43D0BA5464070 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARShooter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B4833A61F5B89F20087AD00 /* Sources */ = {
@@ -280,11 +365,13 @@
 		};
 		0B4833BD1F5B89F20087AD00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 931CB5572E95DF198CFBA05A /* Pods-ARShooter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5HF4YR9U6S;
 				INFOPLIST_FILE = ARShooter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kai.ARShooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,11 +382,13 @@
 		};
 		0B4833BE1F5B89F20087AD00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F76994ECA11F6020D7671EDA /* Pods-ARShooter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5HF4YR9U6S;
 				INFOPLIST_FILE = ARShooter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kai.ARShooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
