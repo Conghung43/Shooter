@@ -34,19 +34,16 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
     var playerExplosion : AVAudioPlayer!
     var playerbullet : AVAudioPlayer!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
         self.sceneView.session.run(configuration)
         self.sceneView.autoenablesDefaultLighting = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
         self.sceneView.addGestureRecognizer(gestureRecognizer)
         self.sceneView.scene.physicsWorld.contactDelegate = self
-//        soundBoeing()
-//        soundPlane()
-//        soundExplosion()
-//        soundBullet()
+
         stopbtn.isHidden = true
         resetBtn.isHidden = true
         
@@ -62,7 +59,6 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
         addAnimation()
         updateText()
         setTimer()
-        
         playbtn.isHidden = true
         stopbtn.isHidden = false
         resetBtn.isHidden = true
@@ -72,6 +68,7 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
         sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
             node.isPaused = true
         }
+        self.timer.stop()
         playbtn.isHidden = false
         stopbtn.isHidden = true
         resetBtn.isHidden = true
@@ -105,7 +102,7 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
             print("co loi \(error.description)")
         }
     }
-    
+
     func soundPlane () {
         let path = Bundle.main.path(forResource: "Biplane-LadyIT-2272_hifi", ofType: "mp3")!
         let url = URL(fileURLWithPath: path)
@@ -116,7 +113,7 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
             print("co loi \(error.description)")
         }
     }
-    
+
     func soundExplosion () {
         let path = Bundle.main.path(forResource: "Nuklear_-Staberxp-8147_hifi", ofType: "mp3")!
         let url = URL(fileURLWithPath: path)
@@ -127,7 +124,7 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
             print("co loi \(error.description)")
         }
     }
-    
+
     func soundBullet () {
         let path = Bundle.main.path(forResource: "376060__morganpurkis__mouth-gun", ofType: "wav")!
         let url = URL(fileURLWithPath: path)
@@ -244,11 +241,12 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
                 
                 self.sceneView.scene.rootNode.addChildNode(self.textNode)
                 
-                //------stop and resest---------
+      //------stop and resest---------
                 self.timer.stop()
                 self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
                     node.isPaused = true
                 }
+                
                 self.playbtn.isHidden = true
                 self.stopbtn.isHidden = true
                 self.resetBtn.isHidden = false
@@ -265,20 +263,31 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
         if nodeA.name == "Egg" && nodeB.name == "Egg" && aliveEgg >= 2 {
             killedEgg += 2
             aliveEgg = aliveEgg - 2
+//            if aliveEgg == 0 {
+//                playerPlane.stop()
+//            }
         }
         else if nodeA.name == "Aircraft" && nodeB.name == "Aircraft" && aliveAircraft >= 2 {
             killedAircraft += 2
             aliveAircraft = aliveAircraft - 2
+//            if aliveAircraft == 0 {
+//                playerBoeing.stop()
+//            }
         }
         else if (nodeA.name == "Aircraft" || nodeB.name == "Aircraft") && aliveAircraft >= 1  {
             killedAircraft += 1
             aliveAircraft = aliveAircraft - 1
+//            if aliveAircraft == 0 {
+//                playerBoeing.stop()
+//            }
         }
         else if (nodeA.name == "Egg" || nodeB.name == "Egg") && aliveEgg >= 1 {
             killedEgg += 1
             aliveEgg = aliveEgg - 1
+//            if aliveEgg == 0 {
+//                playerPlane.stop()
+//            }
         }
-        
         
         
         Target = nodeA
@@ -288,6 +297,16 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
         //        } else if nodeB.physicsBody?.categoryBitMask == BitMaskCategory.bullet.rawValue {
         //            self.Target = nodeB
         //        }
+        
+//        sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+//            if node.name == "confetti" {
+//            node.removeFromParentNode()
+//                node.geometry = nil
+//            }
+//        }
+        
+        
+        
         let confetti = SCNParticleSystem(named: "Media.scnassets/Fire.scnp", inDirectory: nil)
         confetti?.loops = false
         confetti?.particleLifeSpan = 4
@@ -297,12 +316,29 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
         confetti1?.particleLifeSpan = 4
         confetti1?.emitterShape = Bullet?.geometry
         let confettiNode = SCNNode()
+     //   confettiNode.geometry = nil
+        confettiNode.name = "confetti"
         confettiNode.addParticleSystem(confetti!)
         confettiNode.addParticleSystem(confetti1!)
         confettiNode.position = contact.contactPoint
         self.sceneView.scene.rootNode.addChildNode(confettiNode)
-        Target?.removeFromParentNode()
-        Bullet?.removeFromParentNode()
+        
+        
+//        Target?.geometry = nil
+//        Target?.removeFromParentNode()
+//        Bullet?.geometry = nil
+//        Bullet?.removeFromParentNode()
+//        nodeA.removeFromParentNode()
+//        nodeB.removeFromParentNode()
+//        nodeA.geometry = nil
+//        nodeB.geometry = nil
+        
+        confettiNode.runAction(
+            SCNAction.sequence([SCNAction.wait(duration: 3.0),
+                                SCNAction.removeFromParentNode()])
+        )
+
+
         shootScore += 1
         soundExplosion()
         updateText()
@@ -312,6 +348,17 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
     func setTimer() {
         self.timer.perform { () -> NextStep in
             self.createNode += 1
+            
+            if self.createNode == 7 {
+                if self.aliveAircraft == 0 && self.aliveEgg == 0 {
+                    self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+                                    node.removeFromParentNode()
+                        node.geometry = nil
+                                }
+                            }
+                
+            }
+            
             
             if self.createNode == 8 {
                 self.duration -= 0.5
@@ -330,7 +377,6 @@ class ViewController: UIViewController, SCNPhysicsContactDelegate {
     }
     
 
-    
 }
 
 func +(left: SCNVector3, right: SCNVector3) -> SCNVector3 {

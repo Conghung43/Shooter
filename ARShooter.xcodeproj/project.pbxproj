@@ -16,7 +16,6 @@
 		2A92631F207DF32D008E6CE6 /* Plane_Ef-Gionex_--8128_hifi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A92631E207DF32D008E6CE6 /* Plane_Ef-Gionex_--8128_hifi.mp3 */; };
 		2A926326207DF34B008E6CE6 /* Biplane-LadyIT-2272_hifi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A926322207DF34A008E6CE6 /* Biplane-LadyIT-2272_hifi.mp3 */; };
 		2A926327207DF34B008E6CE6 /* Nuklear_-Staberxp-8147_hifi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A926323207DF34B008E6CE6 /* Nuklear_-Staberxp-8147_hifi.mp3 */; };
-		2A98D436207E4CB600811911 /* Uzi-Drug_Dea-8374_hifi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A98D435207E4CB600811911 /* Uzi-Drug_Dea-8374_hifi.mp3 */; };
 		2A98D438207E51E400811911 /* 376060__morganpurkis__mouth-gun.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A98D437207E51E400811911 /* 376060__morganpurkis__mouth-gun.wav */; };
 		5E12EBC5580C827D0238FC2B /* Pods_ARShooter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA0E94E5C07076382C6778A /* Pods_ARShooter.framework */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		2A92631E207DF32D008E6CE6 /* Plane_Ef-Gionex_--8128_hifi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Plane_Ef-Gionex_--8128_hifi.mp3"; sourceTree = "<group>"; };
 		2A926322207DF34A008E6CE6 /* Biplane-LadyIT-2272_hifi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Biplane-LadyIT-2272_hifi.mp3"; sourceTree = "<group>"; };
 		2A926323207DF34B008E6CE6 /* Nuklear_-Staberxp-8147_hifi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Nuklear_-Staberxp-8147_hifi.mp3"; sourceTree = "<group>"; };
-		2A98D435207E4CB600811911 /* Uzi-Drug_Dea-8374_hifi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Uzi-Drug_Dea-8374_hifi.mp3"; sourceTree = "<group>"; };
 		2A98D437207E51E400811911 /* 376060__morganpurkis__mouth-gun.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "376060__morganpurkis__mouth-gun.wav"; sourceTree = "<group>"; };
 		6DA0E94E5C07076382C6778A /* Pods_ARShooter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARShooter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		931CB5572E95DF198CFBA05A /* Pods-ARShooter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARShooter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARShooter/Pods-ARShooter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				2A98D437207E51E400811911 /* 376060__morganpurkis__mouth-gun.wav */,
-				2A98D435207E4CB600811911 /* Uzi-Drug_Dea-8374_hifi.mp3 */,
 				2A926322207DF34A008E6CE6 /* Biplane-LadyIT-2272_hifi.mp3 */,
 				2A926323207DF34B008E6CE6 /* Nuklear_-Staberxp-8147_hifi.mp3 */,
 				2A92631E207DF32D008E6CE6 /* Plane_Ef-Gionex_--8128_hifi.mp3 */,
@@ -170,7 +167,6 @@
 				2A98D438207E51E400811911 /* 376060__morganpurkis__mouth-gun.wav in Resources */,
 				2A926327207DF34B008E6CE6 /* Nuklear_-Staberxp-8147_hifi.mp3 in Resources */,
 				2A926326207DF34B008E6CE6 /* Biplane-LadyIT-2272_hifi.mp3 in Resources */,
-				2A98D436207E4CB600811911 /* Uzi-Drug_Dea-8374_hifi.mp3 in Resources */,
 				0B4833B81F5B89F20087AD00 /* LaunchScreen.storyboard in Resources */,
 				0B4833B51F5B89F20087AD00 /* Assets.xcassets in Resources */,
 				2A92631F207DF32D008E6CE6 /* Plane_Ef-Gionex_--8128_hifi.mp3 in Resources */,
